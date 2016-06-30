@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular dynamic background demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="../src/angularDynamicBackground.module.js"></script>
+        <script src="../src/angularDynamicBackground.directive.js"></script>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .demo-element{
+                text-align: center;
+                transition: background .1s, color .1s;
+            }
+        </style>
+    </head>
+    <body ng-app="dynamicBackgroundDemo">
+         <div ng-controller="DemoCtrl">
+             
+            <label><input type="checkbox" ng-model="useRGB">Use RGB()</label>
+
+            <div class="demo-element" dynamic-background="myBackground">
+                <h1>Random color: {{myBackground}}</h1>
+            </div>
+         </div>
+         <script>
+             angular.module('dynamicBackgroundDemo', ['dynamicBackground'])
+             .controller('DemoCtrl', function($scope, $interval){
+
+                $interval(function(){
+                    if($scope.useRGB){
+                        $scope.myBackground = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+                    } else{
+                        $scope.myBackground = '#'+Math.floor(Math.random()*16777215).toString(16);
+                    }
+                },500);
+
+             })
+         </script>
+    </body>
+</html>

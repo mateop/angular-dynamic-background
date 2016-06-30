@@ -1,0 +1,26 @@
+{
+  "name": "angular-dynamic-background",
+  "authors": [
+    "mateop <percinic@gmail.com>"
+  ],
+  "description": "A directive for setting dynamic background colors to an aelement and applying the optimal text color",
+  "main": "angularDynamicBackground.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "backround",
+    "color"
+  ],
+  "dependencies": {
+    "angular": "~1.5.7"
+  },
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
