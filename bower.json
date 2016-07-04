@@ -4,7 +4,7 @@
     "mateop <percinic@gmail.com>"
   ],
   "description": "A directive for setting dynamic background colors to an aelement and applying the optimal text color",
-  "main": "angularDynamicBackground.js",
+  "main": "./src/angularDynamicBackground.directive.js",
   "moduleType": [],
   "keywords": [
     "angular",
