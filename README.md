@@ -1,6 +1,6 @@
 # Angular Dynamic Background
 
-Angular Dynamic Background is a simple agularjs directive that changes the background color of an element and sets an optimal font color for better legibility.
+Angular Dynamic Background is a simple angularjs directive that changes the background color of an element and sets an optimal font color for better legibility.
 
 ## Installation
 For the latest stable version, use Bower from the command line.
