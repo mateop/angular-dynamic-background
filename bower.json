@@ -3,24 +3,23 @@
   "authors": [
     "mateop <percinic@gmail.com>"
   ],
-  "description": "A directive for setting dynamic background colors to an aelement and applying the optimal text color",
+  "description": "A directive for setting dynamic background colors to an element and applying the optimal text color",
   "main": "./src/angularDynamicBackground.directive.js",
-  "moduleType": [],
   "keywords": [
     "angular",
-    "backround",
+    "background",
     "color"
   ],
   "dependencies": {
     "angular": "~1.5.7"
   },
   "license": "MIT",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "demo"
   ]
 }
